@@ -58,6 +58,10 @@
     border-color: var(--main-color);
 }
 
+button{
+    cursor: pointer;
+}
+
 /* reset */
 html{
     scroll-behavior: smooth;
@@ -557,3 +561,43 @@ header.bg-reveal::before{
     font-weight: 500;
     text-transform: capitalize;
 }
+
+.contact-info-item p:last-child{
+    margin: 0;
+}
+
+/* form */
+
+.input-box{
+    margin-top: 20px;
+}
+
+.input-control{
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    color: var(--text-x-dark-gray);
+    padding: 0 20px;
+}
+
+.input-control:focus{
+    outline: 1px solid var(--border-color);
+}
+
+::placeholder{
+    color: var(--text-dark-gray);
+    opacity: 1;
+}
+
+textarea.input-control{
+    display: block;
+    height: 150px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
